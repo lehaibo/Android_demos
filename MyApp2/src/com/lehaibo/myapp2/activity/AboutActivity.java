@@ -1,11 +1,22 @@
 package com.lehaibo.myapp2.activity;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.json.JSONException;
 
+import roboguice.inject.InjectView;
+import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import com.lehaibo.myapp2.MyApplication;
+import com.lehaibo.myapp2.R;
 import com.lehaibo.myapp2.base.BaseActivity;
 import com.lehaibo.myapp2.base.PublicTypeBuilder;
 import com.lehaibo.myapp2.dialog.DialogBuilder;
@@ -18,17 +29,6 @@ import com.lehaibo.myapp2.network.ResponseDataPacket;
 import com.lehaibo.myapp2.util.CommonLog;
 import com.lehaibo.myapp2.util.CommonUtil;
 import com.lehaibo.myapp2.util.LogFactory;
-
-import roboguice.inject.InjectView;
-import android.app.Dialog;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
  
 
  
