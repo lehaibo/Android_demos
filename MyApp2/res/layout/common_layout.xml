@@ -37,7 +37,7 @@
             android:id="@+id/content_view"
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent">               
-	 		<com.geniusgithub.lookaround.widget.RefreshListView
+	 		<com.lehaibo.myapp2.widget.RefreshListView
 		    android:id="@+id/listview"
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent"

@@ -7,6 +7,7 @@ import java.util.List;
 import roboguice.inject.InjectView;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import com.lehaibo.myapp2.MyApplication;
 import com.lehaibo.myapp2.R;
 import com.lehaibo.myapp2.adapter.InfoContentAdapter;
 import com.lehaibo.myapp2.content.ContentCache;
+import com.lehaibo.myapp2.content.WebViewActivity;
 import com.lehaibo.myapp2.model.BaseType;
 import com.lehaibo.myapp2.model.BaseType.InfoItem;
 import com.lehaibo.myapp2.network.InfoRequestProxy;
@@ -221,9 +223,18 @@ public  class CommonFragmentEx extends CommonFragment implements InfoRequestProx
             MyApplication.getInstance().onEvent("UMID0002", map);
             
             
-            goContentActivity();
+            //goContentActivity();
+            goWebviewActivity(item);
     }
     
+	private void goWebviewActivity(BaseType.InfoItem item){
+		log.e("goWebviewActivity ");
+ 
+		Intent intent = new Intent();
+		intent.setClass(mContext, WebViewActivity.class);
+		intent.putExtra(WebViewActivity.INTENT_EXTRA_URL, item.mSourceUrl);
+		startActivity(intent);
+	}
 
     private void goContentActivity(){
 //            Intent intent = new Intent();

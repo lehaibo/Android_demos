@@ -35,7 +35,7 @@ import com.lehaibo.myapp2.util.LogFactory;
 
 
 public class MainActivity extends SlidingFragmentActivity implements 
-															OnClickListener, IDialogInterface,
+															OnClickListener,
 															RoboContext {
 
 	private static final CommonLog log = LogFactory.createLog();
@@ -189,12 +189,7 @@ public class MainActivity extends SlidingFragmentActivity implements
 	
 	@Override
 	public void onBackPressed() {
-//		if (exitDialog != null){
-//			exitDialog.dismiss();
-//		}
-//		
-//		exitDialog = getExitDialog();
-//		exitDialog.show();
+ 
 		if(showExitToast()){
 			finish();
 		}else{
@@ -227,36 +222,6 @@ public class MainActivity extends SlidingFragmentActivity implements
 		return false;
 	}
 	
-	
-	private Dialog exitDialog;
-	private Dialog getExitDialog(){
-		Dialog dialog = DialogBuilder.buildNormalDialog(this,
-				getResources().getString(R.string.dia_msg_exit_title),
-				getResources().getString(R.string.dia_msg_exit_msg),
-				this);
-		return dialog;
-	}
-
-
-
-	@Override
-	public void onSure() {
-		if (exitDialog != null){
-			exitDialog.dismiss();
-		}
-		finish();
-	}
-
-
-
-	@Override
-	public void onCancel() {
-		if (exitDialog != null){
-			exitDialog.dismiss();
-		}
-		
-	}
-
 	@Override
 	public Map<Key<?>, Object> getScopedObjectMap() {
 		// TODO Auto-generated method stub

@@ -1,0 +1,2 @@
+06-23 10:45:26.489: D/(25393): sendRequest = http://www.runapp.cn/Topics/public/App/Login?timestamp=1403491526463&conn=Wifi&keys=a6879bed18f8b9f9db6aab8ce7b04c69&std=A1.0&osver=4.2.2&versioncode=1&model=HUAWEI+G750-T00&sign=debug&telco=%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A
+06-23 10:45:27.866: D/(25393): sendRequest = http://www.runapp.cn/Topics/public/Topic/list?timestamp=1403491527862&keys=0c7742fef985a8245a62b41b7e0debfa&std=A1.0&arcTypeID=0&page=0&sign=debug

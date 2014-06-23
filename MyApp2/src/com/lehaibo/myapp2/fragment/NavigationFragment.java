@@ -25,7 +25,7 @@ import android.widget.ListView;
 
 public class NavigationFragment extends Fragment implements OnItemClickListener{
 
-private static final CommonLog log = LogFactory.createLog();
+private static final CommonLog log = LogFactory.createLog("NavigationFragment");
 	
     private Context mContext;
 	private View mView;
