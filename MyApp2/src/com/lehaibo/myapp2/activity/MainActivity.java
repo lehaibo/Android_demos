@@ -8,6 +8,7 @@ import java.util.Map;
 import roboguice.RoboGuice;
 import roboguice.util.RoboContext;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.KeyEvent;
@@ -181,9 +182,9 @@ public class MainActivity extends SlidingFragmentActivity implements
 
 	
 	private void goSettingActivity(){
-//		Intent intent = new Intent();
-//		intent.setClass(this, SettingActivity.class);
-//		startActivity(intent);
+		Intent intent = new Intent();
+		intent.setClass(this, AboutActivity.class);
+		startActivity(intent);
 	}
 	
 	
